@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learnfy/features/user_profile/presentation/views/settings_view.dart';
 import 'package:learnfy/features/user_profile/presentation/widgets/settings_item.dart';
 
 class SettingsItemListView extends StatelessWidget {
@@ -37,12 +36,7 @@ class SettingsItemListView extends StatelessWidget {
       () {},
       () {},
       () {},
-      () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SettingsView()),
-        );
-      },
+      () {},
       () {},
     ];
     return ListView.builder(

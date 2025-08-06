@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learnfy/core/assets.dart';
 import 'package:learnfy/core/theme/app_text_styles.dart';
+import 'package:learnfy/features/user_profile/presentation/views/settings_view.dart';
 
 class UserDataCard extends StatelessWidget {
   const UserDataCard({
@@ -47,7 +48,12 @@ class UserDataCard extends StatelessWidget {
             width: 5,
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsView()),
+              );
+            },
             child: Text(
               "Edit Profile",
               style: AppTextStyles.bodyLargeRegular.copyWith(
