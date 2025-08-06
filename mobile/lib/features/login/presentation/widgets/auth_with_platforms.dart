@@ -6,17 +6,20 @@ class AuthWithPlatforms extends StatelessWidget {
     required this.iconUrl,
     required this.platformName,
     this.onPressed,
+    this.backgroundColor,
   });
 
   final String iconUrl;
   final String platformName;
   final void Function()? onPressed;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
+        backgroundColor: backgroundColor,
         elevation: 0,
         side: BorderSide(color: Colors.grey.shade300),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
